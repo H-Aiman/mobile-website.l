@@ -1,0 +1,247 @@
+{
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 50px;
+        }
+
+        /* Pink Search Bar Styling */
+        #searchBar {
+            width: 300px;
+            padding: 12px 20px;
+            font-size: 16px;
+            border: 2px solid #ff69b4; /* Hot pink border */
+            border-radius: 25px;
+            outline: none;
+            background-color: #ffc0cb; /* Light pink background */
+            color: #fff; /* White text color */
+        }
+
+        /* Placeholder text color inside the pink bar */
+        #searchBar::placeholder {
+            color: #ffe4e1;
+        }
+
+        /* List styling */
+        #itemList {
+            list-style-type: none;
+            padding: 0;
+            margin-top: 20px;
+            width: 340px;
+             }
+
+        #itemList li {
+            padding: 10px 15px;
+            margin-bottom: 5px;
+            background-color: #ffffff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+
+
+ /* Styling the container app area */
+    .app-container {
+      font-family: Arial, sans-serif;
+      padding: 30px;
+      max-width: 40px;
+    }
+
+    .label-text {
+      display: block;
+      font-size: 18px;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+/* Main styling for the big, colored drop-down box */
+    .custom-dropdown {
+      font-size: 20px;          /* Makes text larger */
+      padding: 12px 20px;       /* Adds inside space to make the box bigger */
+      width: 100px%;            /* Forces it to take up the full width of container */
+      min-width: 280px;         /* Prevents it from getting too small */
+      
+      /* Color Customization */
+      background-color: #3498db; /* CHANGE THIS for background color (currently Blue) */
+      color: #ffffff;           /* CHANGE THIS for text color (currently White) */
+      
+      border: 2px solid #2980b9;/* Subtle border around the box */
+      border-radius: 8px;       /* Gives it smooth, rounded corners */
+      cursor: pointer;
+    }
+ /* Styling the option list inside the dropdown */
+    .custom-dropdown option {
+      background-color: #ffffff; /* Changes dropdown menu list background to white */
+      color: #333333;           /* Changes dropdown menu list text to dark gray */
+      font-size: 18px;          /* Large text inside the options list */
+    }
+
+
+
+    
+       
+        .slider {
+  width: 100%;
+  max-width: 800px; /* Adjust slider width as needed */
+  margin: auto;
+  overflow: hidden; /* Hides the images outside the frame */
+}
+
+.slides {
+  display: flex;
+  width: 300%; /* 100% multiplied by the number of images */
+  animation: slide-animation 9s infinite; /* 3 seconds per image */
+}
+
+.slides img {
+  width: 100%; /* Each image occupies exactly one slider width */
+  object-fit: cover;
+}
+
+/* Keyframes for 3 images shifting left */
+@keyframes slide-animation {
+  0% { margin-left: 0%; }
+  25% { margin-left: 0%; }     /* Hold Slide 1 */
+  33% { margin-left: -100%; }  /* Move to Slide 2 */
+  58% { margin-left: -100%; }  /* Hold Slide 2 */
+  66% { margin-left: -200%; }  /* Move to Slide 3 */
+  91% { margin-left: -200%; }  /* Hold Slide 3 */
+  100% { margin-left: 0%; }    /* Loop back to Slide 1 */
+}
+      
+ * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #fcfcfc;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 20px;
+            border: 1px solid #e0e0e0;
+        }
+
+        /* Banner Slider Section Placeholder */
+        .promo-banner {
+            background: linear-gradient(135deg, #0e3054 0%, #1e5799 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+            position: relative;
+            margin-bottom: 25px;
+            border-radius: 4px;
+        }
+
+        .promo-banner h2 {
+            font-size: 28px;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+        }
+
+        .promo-banner .price {
+            font-size: 32px;
+            font-weight: bold;
+            color: #fff;
+        }
+
+        .dots {
+            margin-top: 15px;
+        }
+
+        .dot {
+            height: 10px;
+            width: 10px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            margin: 0 5px;
+        }
+
+        .dot.active {
+            background-color: #fff;
+        }
+
+        /* Heading Style */
+        .section-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid #cc0000;
+            padding-bottom: 8px;
+            margin-bottom: 20px;
+        }
+
+        .section-title {
+            color: #cc0000;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .more-link {
+            color: #cc0000;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        /* Responsive Grid System */
+        .phone-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .phone-card {
+            border: 1px solid #eeeeee;
+            border-radius: 4px;
+            padding: 15px 10px;
+            text-align: center;
+            transition: transform 0.2s;
+            background: #fff;
+        }
+
+        .phone-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+        }
+
+        .phone-thumb {
+            height: 140px;
+            object-fit: contain;
+            margin-bottom: 12px;
+            max-width: 100%;
+        }
+
+        .brand-name {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 4px;
+        }
+
+        .model-name {
+            font-size: 15px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 8px;
+            min-height: 40px; /* Aligns grids neatly */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .item-price {
+            font-size: 14px;
+            color: #0e3054;
+            font-weight: bold;
+        }
